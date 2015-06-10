@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PortfolioActivity"
+    android:background="#ffdfeaf1">
+
+    <TextView
+        android:text="@string/app_portfolio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/portfolioText"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:paddingTop="16dp"
+        android:paddingBottom="32dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spotify_button"
+        android:id="@+id/buttonSpotify"
+        android:layout_below="@+id/portfolioText"
+        android:layout_alignRight="@+id/buttonScores"
+        android:layout_alignEnd="@+id/buttonScores"
+        android:layout_alignLeft="@+id/buttonScores"
+        android:layout_alignStart="@+id/buttonScores"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#000000"
+        android:background="#F08C35"
+        android:layout_marginBottom="8dp"
+        android:onClick="clickSpotify"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scores_button"
+        android:id="@+id/buttonScores"
+        android:layout_below="@+id/buttonSpotify"
+        android:layout_alignRight="@+id/buttonLibrary"
+        android:layout_alignEnd="@+id/buttonLibrary"
+        android:layout_alignLeft="@+id/buttonLibrary"
+        android:layout_alignStart="@+id/buttonLibrary"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#000000"
+        android:background="#F08C35"
+        android:layout_marginBottom="8dp"
+        android:onClick="clickScores"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/library_button"
+        android:id="@+id/buttonLibrary"
+        android:layout_below="@+id/buttonScores"
+        android:layout_alignRight="@+id/buttonBuild"
+        android:layout_alignEnd="@+id/buttonBuild"
+        android:layout_alignLeft="@+id/buttonBuild"
+        android:layout_alignStart="@+id/buttonBuild"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#000000"
+        android:background="#F08C35"
+        android:layout_marginBottom="8dp"
+        android:onClick="clickLibrary"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/build_button"
+        android:id="@+id/buttonBuild"
+        android:layout_below="@+id/buttonLibrary"
+        android:layout_alignRight="@+id/buttonXYZ"
+        android:layout_alignEnd="@+id/buttonXYZ"
+        android:layout_alignLeft="@+id/buttonXYZ"
+        android:layout_alignStart="@+id/buttonXYZ"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#000000"
+        android:background="#F08C35"
+        android:layout_marginBottom="8dp"
+        android:onClick="clickBuild"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xyz_button"
+        android:id="@+id/buttonXYZ"
+        android:layout_below="@+id/buttonBuild"
+        android:layout_alignRight="@+id/buttonCapstone"
+        android:layout_alignEnd="@+id/buttonCapstone"
+        android:layout_alignLeft="@+id/buttonCapstone"
+        android:layout_alignStart="@+id/buttonCapstone"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#000000"
+        android:background="#F08C35"
+        android:layout_marginBottom="8dp"
+        android:onClick="clickXYZ"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capstone_button"
+        android:id="@+id/buttonCapstone"
+        android:layout_below="@+id/buttonXYZ"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#FFFFFF"
+        android:background="#FF1744"
+        android:onClick="clickCapstone"/>
+
+
+
+</RelativeLayout>
